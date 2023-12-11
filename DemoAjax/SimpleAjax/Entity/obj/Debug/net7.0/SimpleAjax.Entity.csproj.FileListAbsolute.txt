@@ -1,0 +1,11 @@
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\Entity\bin\Debug\net7.0\SimpleAjax.Entity.deps.json
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\Entity\bin\Debug\net7.0\SimpleAjax.Entity.dll
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\Entity\bin\Debug\net7.0\SimpleAjax.Entity.pdb
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\Entity\obj\Debug\net7.0\SimpleAjax.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\Entity\obj\Debug\net7.0\SimpleAjax.Entity.AssemblyInfoInputs.cache
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\Entity\obj\Debug\net7.0\SimpleAjax.Entity.AssemblyInfo.cs
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\Entity\obj\Debug\net7.0\SimpleAjax.Entity.csproj.CoreCompileInputs.cache
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\Entity\obj\Debug\net7.0\SimpleAjax.Entity.dll
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\Entity\obj\Debug\net7.0\refint\SimpleAjax.Entity.dll
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\Entity\obj\Debug\net7.0\SimpleAjax.Entity.pdb
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\Entity\obj\Debug\net7.0\ref\SimpleAjax.Entity.dll

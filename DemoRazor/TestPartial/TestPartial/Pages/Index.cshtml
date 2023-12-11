@@ -1,0 +1,46 @@
+﻿@page
+@using TestPartial.Models
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+}
+
+@{
+    var product1 = new Product() { Name = "Iphone 15 Pro", Description = "Apple", Price = "25tr" };
+    var product2 = new Product() { Name = "Samsung S23 Ultra", Description = "Samsung", Price = "23tr" };
+    var product3 = new Product() { Name = "Iphone 14 Pro", Description = "Apple", Price = "22tr" };
+}
+<div class="row bg-info">
+    <div class="col">
+        <partial name="_ProductItem" model="product1" />
+    </div>
+
+    <div class="col">
+        @await Html.PartialAsync("_ProductItem",product2)
+    </div>
+
+    <div class="col">
+        @{
+            await Html.RenderPartialAsync("_ProductItem", product3);
+        }
+    </div>
+</div>
+
+<div class="row bg-warning">
+    @{
+        var products = new List<Product>()
+        {
+            new Product() { Name = "Iphone 15 Pro", Description = "Apple", Price = "25tr" },
+            new Product() { Name = "Samsung S23 Ultra", Description = "Samsung", Price = "23tr" },
+            new Product() { Name = "Iphone 14 Pro", Description = "Apple", Price = "22tr" }
+        };
+
+        foreach(var product in products)
+        {
+            <div class="col">
+                <partial name="_ProductItem"  model="product" />
+            </div>
+        }
+    }
+</div>

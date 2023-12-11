@@ -1,0 +1,41 @@
+﻿@model FirstModelBinding.Models.Product;
+
+@{
+    ViewBag.Title = "Create";
+}
+<h2>Create</h2>
+
+@* Sử dụng Html.BeginForm
+    Form gửi dữ liệu đến acton "Submit" trong Controller "Home" khi người dùng nhấn nút Submit
+    Phương Http là Post
+*@
+@using (Html.BeginForm("Submit", "Home", FormMethod.Post))
+{
+    <table border="1" cellpadding="6">
+        <tr>
+            <td>Enter Id:</td>
+            <td>@Html.TextBox("Id")</td>
+
+            <td>Enter Name:</td>
+            <td>@Html.TextBox("Name")</td>
+
+            <td>Enter Rate:</td>
+            <td>@Html.TextBox("Rate")</td>
+
+            <td>Enter Rating:</td>
+            <td>@Html.TextBox("Rating")</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="submit" value="Submit" />
+            </td>
+        </tr>
+    </table>
+    <h4 style="color:purple">
+        @*Các dữ liệu này tự động cập nhật khi người dùng gửi biểu mẫu*@
+        ID : @ViewBag.Id<br/>
+        Name : @ViewBag.Name<br/>
+        Rate : @ViewBag.Rate<br/>
+        Rating : @ViewBag.Rating<br/>
+    </h4>
+}

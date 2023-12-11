@@ -1,0 +1,35 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <style>
+        .header {
+            color: cadetblue;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="header">Razor Pages tutorial</h1>
+    <hr />
+    @RenderBody()
+    <hr />
+
+    <h2 class="footer">@DateTime.Now.Year</h2>
+
+    <div id="Footer">
+        <p>This is footer</p>
+    </div>
+    <div>
+        @RenderSection("Test", required: false)
+    </div>
+
+</body>
+</html>

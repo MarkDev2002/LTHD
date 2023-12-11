@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+<button id="loadData">Load Data</button>
+<table class="table table-bordered">
+    <thead class="text-center">
+        <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>MiddelName</th>
+            <th>LastName</th>
+            <th>EmailAddress</th>
+            <th>PhoneNumber</th>
+        </tr>
+    </thead>
+    <tbody class="text-center" id="table_data"></tbody>
+</table>
+
+@* tải các thư việc jquery
+ *@<a href="~/lib/jquery/dist/jquery.min.map"></a>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+@* tệp chứa mã javascript để thể hiện ajax
+ *@<script src="~/js/custom.js"></script>

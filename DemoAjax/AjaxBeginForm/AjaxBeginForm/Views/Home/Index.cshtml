@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "AspNetCore.Unobtrusive.Ajax";
+}
+
+<div class="text-center pb-5 pt-5">
+    <p>Ajax Helpers for ASP.NET Core</p>
+</div>
+
+<div class="text-center" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+    <p><strong>AjaxOnly</strong> Form</p>
+
+    @* sử dụng Ajax.BeginForm để tạo một biểu mẫu cho việc gửi dữ liệu bằng AJAX. *@
+    @* Tạo một đối tượng AjaxOptions với thuộc tính HttpMethod được đặt là "post", 
+    cho biết rằng yêu cầu sẽ sử dụng phương thức POST. *@
+    @using (Html.AjaxBeginForm("AjaxMethod", new AjaxOptions
+     {
+         HttpMethod = "post"
+     }))
+    {
+        <div class="input-group">
+            @Html.TextBox("name", null, new { placeholder = "Type your name", @class = "form-control mx-sm-2" })
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    }
+    <br />
+    <br />
+</div>

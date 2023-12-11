@@ -1,0 +1,51 @@
+﻿@using TestComplexTypeBinding.Models;
+@model Student;
+<h3><b>Complex Type Model Binding </b></h3>
+
+@* Sử dụng Html.BeginForm
+Form gửi dữ liệu đến action "Submit" trong Controller Home khi người dùng nhấn nút "Submit"
+Phương thức Http sẽ là Post *@
+@using (Html.BeginForm("Submit", "Home", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>Enter ID: </td>
+            <td>@Html.TextBox("Id")</td>
+        </tr>
+        <tr>
+            <td>Enter Name: </td>
+            <td>@Html.TextBox("Name")</td>
+        </tr>
+        <tr>
+            <td>Enter Email: </td>
+            <td>@Html.TextBox("Email")</td>
+        </tr>
+        <tr>
+        Gender :    @Html.DropDownListFor(model => model.Gender,
+                    new SelectList(Enum.GetValues(typeof(Gender))),
+                    "Select Gender",
+                    new { @class = "form-control" }
+        )
+        </tr>
+        <tr>
+            <td>Enter Address: </td>
+            <td>@Html.TextBox("Address")</td>
+        </tr>
+        <tr>
+            <td>Date of Birth: </td>
+            <td>@Html.EditorFor(model => model.DateOfBirth)</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+}
+<h4 style="color:purple">
+    ID: @ViewBag.Id<br />
+    Name: @ViewBag.Name<br />
+    Email: @ViewBag.Email<br />
+    Gender: @ViewBag.Gender<br />
+    Address: @ViewBag.Address<br />
+    DoB: @ViewBag.DateOfBirth
+
+</h4>

@@ -1,0 +1,10 @@
+﻿@using TestPartial.Models
+@model Product
+<div class="card my-4" style="width:20rem">
+    <h2 class="card-header text-info">@Model.Name</h2>
+    <div>
+        <p class="card-text">@Model.Description</p>
+        <p>Gia : @Model.Price</p>
+        <a href="#" class="btn btn-danger btn-sm">SHOP</a>
+    </div>
+</div>

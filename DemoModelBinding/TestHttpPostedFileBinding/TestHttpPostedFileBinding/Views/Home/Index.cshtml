@@ -1,0 +1,35 @@
+﻿<h3><b>UploadFile - ModelBinding </b></h3>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Multiply File Upload</h2>
+
+@* Sử dụng Html.BeginForm
+Form gửi dữ liệu đến action "Submit" trong Controller "Home" khi người dùng nhấn nút Submit
+Phương thức HTTP sẽ là Post *@
+@using (Html.BeginForm("Submit",
+                    "Home",
+                    FormMethod.Post,
+                    new { enctype = "multipart/form-data" }))
+
+                      @* enctype để mã hoá dữ liệu gửi lên từ biểu mẫu
+                     "multipart/form-data" được sử dụng để cho phép tải lên tệp(file upload) thông qua biểu mẫu. *@
+{
+    <div class="form-group">
+        <div class="col-md-10">
+            <h3>Upload File</h3>
+            <input class="form-control" name="fromFiles" multiple="multiple" type="file" />
+        </div>
+    </div>
+    <br />
+    <div class="form-group">
+        <div class="col-md-10">
+
+            <input class="btn btn-primary" type="submit" value="Upload File" />
+
+        </div>
+    </div>
+
+    <span style="color:brown">@Html.Raw(ViewBag.Message)</span>
+}

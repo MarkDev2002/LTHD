@@ -1,0 +1,17 @@
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\bin\Debug\net7.0\SimpleAjax.DataAccess.deps.json
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\bin\Debug\net7.0\SimpleAjax.DataAccess.runtimeconfig.json
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\bin\Debug\net7.0\SimpleAjax.DataAccess.dll
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\bin\Debug\net7.0\SimpleAjax.DataAccess.pdb
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\bin\Debug\net7.0\SimpleAjax.Entity.dll
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\bin\Debug\net7.0\SimpleAjax.Entity.pdb
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\obj\Debug\net7.0\SimpleAjax.DataAccess.csproj.AssemblyReference.cache
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\obj\Debug\net7.0\SimpleAjax.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\obj\Debug\net7.0\SimpleAjax.DataAccess.AssemblyInfoInputs.cache
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\obj\Debug\net7.0\SimpleAjax.DataAccess.AssemblyInfo.cs
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\obj\Debug\net7.0\SimpleAjax.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\obj\Debug\net7.0\SimpleAjax.DataAccess.csproj.CopyComplete
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\obj\Debug\net7.0\SimpleAjax.DataAccess.dll
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\obj\Debug\net7.0\refint\SimpleAjax.DataAccess.dll
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\obj\Debug\net7.0\SimpleAjax.DataAccess.pdb
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\obj\Debug\net7.0\SimpleAjax.DataAccess.genruntimeconfig.cache
+C:\Users\kinhc\Documents\LTHD\DemoAjax\SimpleAjax\DataAccess\obj\Debug\net7.0\ref\SimpleAjax.DataAccess.dll

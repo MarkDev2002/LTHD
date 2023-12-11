@@ -1,0 +1,168 @@
+﻿@page
+@model TestRazor.Pages.RazorTutoModel
+@* <p>Bây giờ là @DateTime.Now</p>
+<p>Giờ này tuần trước là : @(DateTime.Now - TimeSpan.FromDays(7))</p> *@
+
+@* <p>1 + 1 = @(1 + 1)</p> <!--explicit-->
+<p>Pi = @Math.PI</p> <!--implicit-->
+<p>Sin(10) = @Math.Sin(10)</p> <!--implicit-->
+<p>Circle Area = @(Math.PI * 10 * 10)</p> <!--explicit--> *@
+
+@* @{
+    // đây là một code block
+    // Tiêu đề trang
+    ViewData["Title"] = "Razor TuTo";
+    var Name = "nCov"; // khai báo biến
+    string SayHello(string name) => $"Hello in code block, {name}"; // khai báo phương thức
+    var countries = new[] { "USA", "Russia", "France", "GB" }; // khai báo mảng
+    void RenderName(string name)
+    { // đây là một phương thức có cách chuyển đổi C# -> HTML đặc biệt
+        <p>Name: <strong>@name</strong></p>
+    }
+}
+<!-- Đây là thẻ h1 chứa biểu thức razor -->
+<h1>@SayHello(Name)</h1>
+<!-- Đây là thẻ html <p> thông thường -->
+<p>Razor is a markup syntax for embedding server-based code into webpages. The Razor syntax consists of Razor markup, C#, and HTML.</p>
+<!-- Thẻ ul chứa cấu trúc điều khiển foreach sinh ra các thẻ li tương ứng -->
+<ul>
+    @foreach (var c in countries)
+    {
+        <li>@c</li>
+    }
+</ul> *@
+
+@* @{
+    var date = DateTime.Now.ToShortDateString();
+    var message = "Hello World";
+}
+
+<h2>Today's date is: @date </h2>
+<h3>@message</h3>
+
+@{
+    var d = DateTime.Now.ToShortDateString();
+    string mess = "Hello World!";
+    <text>Today's date is:</text> @date
+    <br />
+    @message
+} *@
+
+@* @{
+    int value = 200;
+}
+
+@if (value > 100)
+{
+    <p>Value is greater than 100.</p>
+}
+else
+{
+    <p>Value is less than 100.</p>
+}
+
+@{
+    var val = 200;
+    if (val > 100)
+    {
+        <p>The value is greater than 100 </p>
+    }
+    else
+    {
+        <p>This value is less than 100.</p>
+    }
+} *@
+@* @{
+    var value = 200;
+}
+@switch (value)
+{
+    case 0:
+        @: value is Zero
+        break;
+    case 100:
+        <p>Value is 100 </p>
+        break;
+    case 200:
+        <p>Value is @value </p>
+        break;
+    case 300:
+        <text>Value is 300</text>
+        break;
+    default:
+        <p>Invalid Value </p>
+        break;
+
+} *@
+@* <!--For Each 1-->
+@for (int i = 0; i < 5; i++)
+{
+    <span> @i </span>
+}
+
+<!--For each 2-->
+@{
+    var countries = new[] {
+        "China",
+        "India",
+        "United States",
+        "Indonesia",
+         };
+}
+<div style="background-color:cadetblue;padding:10px;">
+    <strong>Các quốc gia đông dân nhất thế giới:</strong>
+    <ol>
+        @foreach(var country in countries) {
+            if (country == "China" || country == "India") {
+                <li>@country (trên 1 tỷ dân)</li>
+            }
+            else {
+                <li>@country</li>
+            }
+        }
+    </ol>
+</div> *@
+
+@* @{
+    var countries = new[] {
+        "China",
+        "India",
+        "United States",
+        "Indonesia"
+         };
+}
+<div style="background-color:cadetblue;padding:10px;">
+    <strong>Các quốc gia đông dân nhất thế giới:</strong>
+    <ol>
+        @{ var i = 0; }
+        @while (i < countries.Length) {
+            var country = countries[i++];
+            if (country == "China" || country == "India") {
+                <li>@country (trên 1 tỷ dân)</li>
+            }
+            else {
+                <li>@country</li>
+            }
+        }
+    </ol>
+</div> *@
+
+
+@{
+    void SayHello(string name)
+    {
+        <text>Name: @name</text>
+    }
+    // Lời gọi hàm bình thường
+    SayHello("Hello World");
+    // Dưới đây lại là đoạn HTML kết hợp với lời gọi hàm
+    <div style="background: #b6ff00;">@{
+            SayHello("Covid");
+        }</div>
+    // Viết code C# bình thường
+}
+<div style="background: #ffd800;">
+    @{
+        SayHello("World");
+    }
+</div>
